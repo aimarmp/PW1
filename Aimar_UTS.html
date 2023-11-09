@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="AimarUTS.css">
+    <link rel="Icon" type="images/x-icon" href="images2/favicon.png">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <title>Penghijauan</title>
+</head>
+
+<body>
+
+<header>
+    
+</header>
+
+<div class="navbar">
+    <img class="logo" src="images/logo.png" id="sidebarToggle">
+    <nav>
+        <ul class="nav_links">
+            <li><a class="anavbar" href="#">Beranda</a></li>
+            <li class="dropdown">
+                <a href="javascript:void(0)" class="dropdown">Berita</a>
+                <div class="dropdown-content">
+                    <a class="dropdown-list" href="#">Link 1</a>
+                    <a class="dropdown-list" href="#">Link 2</a>
+                    <a class="dropdown-list" href="#">Link 3</a>
+                </div>                
+            </li>
+            <li><a class="anavbar" href="#">Tentang Kami</a></li>
+            <li><a class="anavbar" href="#">Layanan</a></li>
+            <li><a class="anavbar" href="#">Kontak</a></li>
+        </ul>
+    </nav>
+    <a class="cta" href="#"><button>Gabung</button></a>
+</div>
+
+<div style="display:none" id="mySidebar">
+    <a href="#" class="sidebarlnk">Link 1</a>
+    <a href="#" class="sidebarlnk">Link 2</a>
+    <a href="#" class="sidebarlnk">Link 3</a>
+</div>
+
+<script>
+    document.getElementById("sidebarToggle").addEventListener("click", function(event) {
+        var sidebar = document.getElementById("mySidebar");
+        sidebar.style.display = (sidebar.style.display === "none") ? "block" : "none";
+        event.stopPropagation();
+    });
+
+    function w3_close() {
+        document.getElementById("mySidebar").style.display = "none";
+    }
+
+    document.addEventListener("click", function(event) {
+        var sidebar = document.getElementById("mySidebar");
+        if (sidebar.style.display === "block" && event.target !== sidebar && !sidebar.contains(event.target)) {
+            sidebar.style.display = "none";
+        }
+    });
+</script>
+
+
+<br>
+<div class="imgmain">
+</div>
+
+<br>
+
+<p class="text">
+    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Et numquam corporis in rerum, atque labore animi aliquam soluta error facere corrupti iste aspernatur adipisci voluptate, dicta natus nostrum quia excepturi?
+</p>
+
+<br>
+<div class="img1">
+</div>
+
+<p class="text">
+    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Et numquam corporis in rerum, atque labore animi aliquam soluta error facere corrupti iste aspernatur adipisci voluptate, dicta natus nostrum quia excepturi?
+</p>
+
+<p class="text">
+    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Et numquam corporis in rerum, atque labore animi aliquam soluta error facere corrupti iste aspernatur adipisci voluptate, dicta natus nostrum quia excepturi?
+</p>
+</body>
+</html>
