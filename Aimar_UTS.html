@@ -28,9 +28,9 @@
                     <a class="dropdown-list" href="#">Link 3</a>
                 </div>                
             </li>
-            <li><a class="anavbar" href="#">Tentang Kami</a></li>
-            <li><a class="anavbar" href="#">Layanan</a></li>
-            <li><a class="anavbar" href="#">Kontak</a></li>
+            <li><a class="anavbar" href="#img1">Tentang Kami</a></li>
+            <li><a class="anavbar" href="#img2">Layanan</a></li>
+            <li><a class="anavbar" href="#img3">Kontak</a></li>
         </ul>
     </nav>
     <a class="cta" href="#"><button>Gabung</button></a>
@@ -59,7 +59,18 @@
             sidebar.style.display = "none";
         }
     });
+
+    document.querySelectorAll('.anavbar').forEach(anchor => {
+        anchor.addEventListener('click', function (e) {
+            e.preventDefault();
+
+            document.querySelector(this.getAttribute('href')).scrollIntoView({
+                behavior: 'smooth'
+            });
+        });
+    });
 </script>
+
 
 
 <br>
@@ -68,20 +79,38 @@
 
 <br>
 
-<p class="text">
-    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Et numquam corporis in rerum, atque labore animi aliquam soluta error facere corrupti iste aspernatur adipisci voluptate, dicta natus nostrum quia excepturi?
+<br>
+<div id="img1">
+    <p class="text">
+        Tentang Kami
+    </p>
+</div>
+
+<p>
+    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Omnis adipisci placeat officiis sapiente beatae id nihil pariatur temporibus ab porro soluta, tempora iste labore? Illum sunt id ab aut magni!
 </p>
 
 <br>
-<div class="img1">
+<div id="img2">
+    <p class="text">
+        Layanan
+    </p>
 </div>
 
-<p class="text">
-    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Et numquam corporis in rerum, atque labore animi aliquam soluta error facere corrupti iste aspernatur adipisci voluptate, dicta natus nostrum quia excepturi?
+<p>
+    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Omnis adipisci placeat officiis sapiente beatae id nihil pariatur temporibus ab porro soluta, tempora iste labore? Illum sunt id ab aut magni!
 </p>
 
-<p class="text">
-    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Et numquam corporis in rerum, atque labore animi aliquam soluta error facere corrupti iste aspernatur adipisci voluptate, dicta natus nostrum quia excepturi?
+<br>
+<div id="img3">
+    <p class="text">
+        kontak
+    </p>
+</div>
+
+<p>
+    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Omnis adipisci placeat officiis sapiente beatae id nihil pariatur temporibus ab porro soluta, tempora iste labore? Illum sunt id ab aut magni!
 </p>
+
 </body>
 </html>
