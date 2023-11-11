@@ -9,7 +9,7 @@
 }
 
 body {
-    margin: 0;
+    margin: 0px;
 }
 
 .imgmain {
@@ -54,7 +54,7 @@ body {
 }
 
 .dropdown-list {
-    background-color: white; /* Set the background color to transparent */
+    background-color: white;
 }
 
 .nav_links li .anavbar:hover {
@@ -74,7 +74,7 @@ body {
     color: #f9f9f9;
     padding-top: 20px;
     box-shadow: 0px 0px 5px 5px rgba(0,0,0,0.2);
-    transition: all 0.3s ease; /* Add transition for animation */
+    transition: all 0.3s ease;
 }
 
 .sidebarlnk {
@@ -83,18 +83,43 @@ body {
     display: block;
 }
 
-.closebtn:hover, .sidebarlnk:hover {
+.sidebarlnk:hover {
     background-color: #f1f1f1;
     color: #044f00;
     box-shadow: 0px 0px 5px 5px rgba(0,0,0,0.1);
 }
 
-.img1 {
-    background-image: url(images/4500642.jpg);
+#img1 {
+    background-image: url("images/4500642.jpg");
     background-size: cover;
-    padding-top: 10%;
-    padding-bottom: 10%;
+    padding-top: 5%;
+    padding-bottom: 5%;
     background-attachment: fixed;
+}
+
+#img2 {
+    background-image: url("images/4500642.jpg");
+    background-size: cover;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    background-attachment: fixed;
+}
+
+#img3 {
+    background-image: url("images/4500642.jpg");
+    background-size: cover;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    background-attachment: fixed;
+}
+
+.text {
+    font-size: 500%;
+    margin-left: 50px;
+    margin-right: 50px;
+    background-color: transparent;
+    text-align: center;
+    color: white;
 }
 
 a, button {
@@ -166,7 +191,7 @@ button {
     border: none;
     border-radius: 50px;
     cursor: pointer;
-    transition: all 0.3s ease 0s; /* Added 's' in '0.3s' for seconds */
+    transition: all 0.3s ease 0s;
 }
 
 button:hover {
@@ -175,8 +200,4 @@ button:hover {
 
 button:hover {
     background-color: rgba(0, 99, 18, 0.8);
-}
-
-.text {
-    font-size: 500%;
 }
