@@ -12,7 +12,11 @@ body {
     margin: 0px;
 }
 
-.imgmain {
+header {
+    
+}
+
+#imgmain {
     background-image: url(images/pexels-christian-heitz-842711.jpg);
     background-size: cover;
     padding-top: 2%;
@@ -166,9 +170,7 @@ li {
     margin; 0px 5px 5px 0px;
 }
 
-header {
 
-}
 
 .logo {
     width: 5%;
